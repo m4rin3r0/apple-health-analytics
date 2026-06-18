@@ -13,4 +13,4 @@ dependencies = [
 ]
 
 [tool.setuptools]
-packages = ["apple_health_analytics"]
+packages = ["apple_health_analytics", "apple_health_analytics.handlers"]
