@@ -2,3 +2,5 @@
 .vscode
 uv.lock
 *.egg-info
+*__pycache__
+test_preprocessor.py
