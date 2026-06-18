@@ -1,0 +1,4 @@
+.venv
+.vscode
+uv.lock
+*.egg-info

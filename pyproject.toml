@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apple-health-analytics"
+version = "0.1.0"
+description = "Uncover hidden patterns in your Apple Health data — beyond what the Health app shows you."
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0.0",
+  "apple_health_data_parser @ git+https://github.com/m4rin3r0/apple-health-data-parser.git",
+]
+
+[tool.setuptools]
+packages = ["apple_health_analytics"]
