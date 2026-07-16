@@ -37,5 +37,5 @@ class Preprocessor:
         result = daily_frames[0]
         for frame in daily_frames[1:]:
             result = result.join(frame, how="outer")
-        result = result.fillna(0).sort_index()
+        result = result.sort_index()
         return result

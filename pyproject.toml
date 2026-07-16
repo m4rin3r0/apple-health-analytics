@@ -9,8 +9,14 @@ description = "Uncover hidden patterns in your Apple Health data — beyond what
 requires-python = ">=3.10"
 dependencies = [
   "pandas>=2.0.0",
+  "numpy>=1.24.0",
+  "scipy>=1.10.0",
+  "click>=8.1.7",
   "apple_health_data_parser @ git+https://github.com/m4rin3r0/apple-health-data-parser.git",
 ]
 
+[project.scripts]
+apple-health-analytics = "apple_health_analytics.__main__:main"
+
 [tool.setuptools]
-packages = ["apple_health_analytics", "apple_health_analytics.handlers"]
+packages = ["apple_health_analytics", "apple_health_analytics.handlers", "apple_health_analytics.analyses"]
